@@ -1,14 +1,14 @@
-import { Coordinates } from "./Coordinates";
+let { Coordinates } = require("./Coordinates");
 
-export class Vector{
+class Vector{
     _c1 = null;
     _c2 = null;
 
     constructor(c1, c2){
-        if(c1 instanceof Coordinates){
+        if(!c1 instanceof Coordinates){
             throw new Error('Parameter 1 is not a Coordinates');
         }
-        if(c2 instanceof Coordinates){
+        if(!c2 instanceof Coordinates){
             throw new Error('Parameter 2 is not a Coordinates');
         }
         this._c1 = c1;
@@ -30,3 +30,5 @@ export class Vector{
         )
     }
 }
+
+module.exports = {Vector};

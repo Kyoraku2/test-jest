@@ -1,4 +1,4 @@
-export class Clock{
+class Clock{
     _date = null;
 
     constructor(){
@@ -26,3 +26,5 @@ export class Clock{
         return Date.now();
     }
 }
+
+module.exports = { Clock };

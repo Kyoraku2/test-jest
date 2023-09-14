@@ -1,11 +1,11 @@
-import { Clock } from "./Clock";
-import { Coordinates } from "./Coordinates";
-import { LandSensor } from "./LandSensor";
-import { Vector } from "./Vector";
+let { Clock } = require("./Clock.js");
+let { Coordinates } = require("./Coordinates.js");
+let { LandSensor } = require("./LandSensor.js");
+let { Vector } = require("./Vector.js");
 
-export const ENERGY_RECHARGING = .1;
+const ENERGY_RECHARGING = .1;
 
-export class Robot{
+class Robot{
     _clock = null;
     _energy = 1.0;
     _coordinates = null;
@@ -87,3 +87,5 @@ export class Robot{
         return this._coordinates;
     }
 }
+
+module.exports = { Robot, ENERGY_RECHARGING};
