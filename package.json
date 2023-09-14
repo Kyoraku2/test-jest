@@ -1,0 +1,22 @@
+{
+  "name": "test-jest",
+  "version": "1.0.0",
+  "description": "",
+  "type":"module",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kyoraku2/test-jestv2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kyoraku2/test-jestv2/issues"
+  },
+  "homepage": "https://github.com/Kyoraku2/test-jestv2#readme"
+}
