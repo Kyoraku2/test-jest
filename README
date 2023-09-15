@@ -1,0 +1,5 @@
+Install the project :
+    npm install
+
+To run :
+    npm run jest

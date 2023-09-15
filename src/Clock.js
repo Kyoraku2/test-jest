@@ -19,7 +19,7 @@ class Clock{
     }
 
     getTimestamp(){
-        return this._date.getTimestamp();
+        return this._date.getTime();
     }
 
     getCurrentTime(){
